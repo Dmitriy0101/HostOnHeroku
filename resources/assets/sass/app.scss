@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../../public/assets/css/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../../public/assets/css/fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../../public/assets/css/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$max-width: 1528;
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.content__top {
+    margin: 20px 40px 0 40px;
+    background: linear-gradient(99.18deg, #FF7800 3.07%, #FE374A 100.56%);
+    border-radius: 22px;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 244px;
+        height: 244px;
+        border-radius: 50%;
+        bottom: -90px;
+        left: -90px;
+        transform: matrix(0, 1, 1, 0, 0, 0);
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.042) 0%, rgba(216, 248, 255, 0.2) 100%);
+        backdrop-filter: blur(120px);
+
+    }
+}
+.content__bla {
+
+}
+
+.container {
+    max-width: $max-width+px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.content__popular {
+    padding: 82px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 112%;
+    color: #FFFFFF;
+}
+
+
+.content__footer {
+    margin-top: 140px;
+    padding-top: 64px;
+    background: #F7F9F9;
+}
+
+.content__card {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+
+.card {
+    background: #FFFFFF;
+    padding: 30px 48px 0 40px;
+    border-radius: 10px;
+    color: #6A677B;
+
+    &:hover {
+        background: #FF485A;
+        box-shadow: 0px 10px 40px rgba(255, 72, 90, 0.4);
+        border-radius: 10px;
+        color: #FFFFFF;
+    }
+}
+
+.card__title {
+    padding-bottom: 33px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 133%;
+}
+
+.card__time {
+    padding-bottom: 29px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+
+}
+
+.clock-info {
+    margin-left: 12px;
+}
+
+.row {
+    padding-bottom: 72px;
+}

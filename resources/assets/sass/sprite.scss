@@ -1,0 +1,15 @@
+.arrow {
+    fill: #FFFFFF;
+    width: 18px;
+    height: 18px;
+}
+
+.clock {
+    fill: none;
+    stroke: #6A677B;
+    width: 18px;
+    height: 18px;
+    &:hover{
+        stroke: #FFFFFF;
+    }
+}
