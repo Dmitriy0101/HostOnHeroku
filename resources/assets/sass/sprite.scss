@@ -1,15 +1,35 @@
 .arrow {
     fill: #FFFFFF;
-    width: 18px;
-    height: 18px;
-}
 
+}
 .clock {
     fill: none;
     stroke: #6A677B;
-    width: 18px;
-    height: 18px;
-    &:hover{
-        stroke: #FFFFFF;
-    }
+}
+.fav {
+    width: 20px;
+    height: 17px;
+}
+.libra {
+    width: 20px;
+    height: 17px;
+}
+.play-button {
+    width: 20px;
+    height: 20px;
+}
+.icon-raiting{
+    width: 12px;
+    height: 12px;
+    fill: #FFD600;
+}
+.icon-rait{
+    width: 12px;
+    height: 12px;
+    fill: #D8DADB;
+}
+.icon-basket{
+    width: 20px;
+    height: 20px;
+    fill: #000;
 }

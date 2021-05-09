@@ -1,0 +1,16 @@
+.products {
+    padding: 0 15px;
+
+    .col {
+        padding: 0 10px;
+        z-index: 3;
+        @media screen and (min-width: 1100px){
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+}

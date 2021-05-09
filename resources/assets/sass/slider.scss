@@ -1,71 +1,43 @@
 .slider {
-    display: flex;
-    padding-left: 159px;
-    /*position: relative;
-    &:after{
-        content: "";
-        position: absolute;
-        right: -21%;
-        top: -15%;
-        width: 775px;
-        height: 775px;
-        border-radius: 50%;
-        transform: matrix(1, 0, 0, -1, 0, 0);
-        background: radial-gradient(50% 50% at 50% 50%, rgba(254, 52, 73, 0.2) 0%, rgba(255, 55, 74, 0.2) 100%);
-        backdrop-filter: blur(120px);
-    }*/
-}
-
-.slider .slick-list {
-    overflow: hidden;
-}
-
-.slider .slick-track {
-    display: flex;
-}
-
-.slider__item {
-    margin-right: 30px;
-
-    &:last-child {
-        margin-right: 0;
+    @media screen and (min-width: 1550px) {
+        width: 115%;
     }
-
-    &:nth-child(2n+1) {
-        margin-top: 30px;
+    @media screen and (min-width: 2000px) {
+        width: 119%;
     }
 }
-
-.slider__link {
-    position: relative;
-
-    &:after {
-        content: "";
-        position: absolute;
-        border-radius: 20px;
-        bottom: -10px;
-        width: 30px;
-        height: 30px;
-        background: conic-gradient(from 180deg at 50% 50%, rgba(255, 255, 255, 0) 0deg, #F5DF4D 180deg, #FF6D43 360deg);
-        transform: matrix(0, 1, 1, 0, 0, 0);
-    }
-}
-
-.slider__info {
+.slider {
     padding-bottom: 77px;
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 30px;
+    .slick-list{
+        overflow: hidden;
+    }
+    .slick-track{
+        display: flex;
+    }
+    .slick-slide{
+        width: 311px;
 
-    a {
-        line-height: 133%;
-        color: #FFFFFF;
-        position: relative;
-        cursor: pointer;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
+        &:not(:last-child) {
+            margin-right: 30px;
+
+            @media (max-width: 1500px) {
+                margin-right: 20px;
+            }
+        }
+
+        &:nth-child(2n+1)  {
+            margin-top: 30px;
+
+            @media (max-width: 1100px) {
+                margin-top: 0;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            margin: 0 auto;
         }
     }
-
 }
+
+
+

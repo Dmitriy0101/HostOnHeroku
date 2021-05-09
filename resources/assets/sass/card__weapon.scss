@@ -1,0 +1,129 @@
+.card__weapon {
+    max-width: 1840px;
+}
+
+.weapon__block {
+    border: 1px solid #F1F1F1;
+    position: relative;
+}
+.weapon__lable{
+    position: absolute;
+    top: -16px;
+    left: 25px;
+    border-radius: 30px;
+    padding: 7px 13px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 123%;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+.weapon__lable-new{
+    background: #219653;
+}
+.weapon__lable-action{
+    background: #2F80ED;
+}
+.weapon__lable-sale{
+    background: #E02020;
+}
+.weapon__lable-top{
+    background: #FF8A00;
+}
+.weapon__container {
+    max-width: 395px;
+    margin: 0 auto;
+}
+
+.weapon__link {
+    padding-top: 21px;
+
+    position: relative;
+}
+
+.weapon__img {
+}
+
+.wish {
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weapon__item {
+    padding-bottom: 19px;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.present {
+    position: absolute;
+    bottom: 131px;
+}
+
+.weapon__info {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.weapon__name {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+    color: #000000;
+}
+
+.weapon__rating {
+    padding-top: 8px;
+}
+
+.weapon__review {
+    padding-left: 10px;
+    color: #A7B0B5;
+}
+
+.weapon-price {
+    &__old {
+        color: #A7B0B5;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 125%;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 42%;
+            width: 56px;
+            height: 2px;
+            background: #E02020;
+        }
+    }
+
+    &__new {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__small {
+        color: #E02020;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 120%;
+
+    }
+}
+
+.currency-old {
+    font-size: 13px;
+}
+
+.currency-new {
+    font-size: 16px;
+}

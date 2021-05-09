@@ -1,6 +1,23 @@
 @import "~normalize.css/normalize.css";
 @import '~bootstrap/scss/bootstrap-grid';
-@import "app";
+
+@import "_app";
+
 @import "sprite";
+@import "title";
 @import "button";
+
+@import "categories";
 @import "slider";
+@import "category";
+
+@import "common";
+@import "seo";
+@import "product";
+@import "card";
+
+@import "catalog";
+
+
+@import "card__weapon";
+
