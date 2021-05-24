@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie';
 
 const cookies = document.querySelector('.cookies');
-const cookiesButton = cookies.querySelector('.cookies__button');
+const cookiesButton = cookies.querySelector('.button__cookies');
 
 if (!Cookies.get('ex1-cookies')) {
     window.setTimeout(cookiesInit, 2000);

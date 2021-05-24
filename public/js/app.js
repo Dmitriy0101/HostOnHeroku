@@ -1852,7 +1852,7 @@ __webpack_require__(/*! ./scroll-up */ "./resources/js/scroll-up.js");
 
 __webpack_require__(/*! ./cookies */ "./resources/js/cookies.js");
 
-__webpack_require__(/*! ./drop */ "./resources/js/drop.js");
+__webpack_require__(/*! ./drop-phone */ "./resources/js/drop-phone.js");
 
 __webpack_require__(/*! ./drop-menu */ "./resources/js/drop-menu.js");
 
@@ -1965,7 +1965,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 var cookies = document.querySelector('.cookies');
-var cookiesButton = cookies.querySelector('.cookies__button');
+var cookiesButton = cookies.querySelector('.button__cookies');
 
 if (!js_cookie__WEBPACK_IMPORTED_MODULE_0___default().get('ex1-cookies')) {
   window.setTimeout(cookiesInit, 2000);
@@ -2004,10 +2004,10 @@ document.addEventListener('click', function (e) {
 
 /***/ }),
 
-/***/ "./resources/js/drop.js":
-/*!******************************!*\
-  !*** ./resources/js/drop.js ***!
-  \******************************/
+/***/ "./resources/js/drop-phone.js":
+/*!************************************!*\
+  !*** ./resources/js/drop-phone.js ***!
+  \************************************/
 /***/ (() => {
 
 var dropdownPhones = document.querySelector('.dropdown-phones__menu');

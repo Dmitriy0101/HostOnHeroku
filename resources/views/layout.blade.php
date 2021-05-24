@@ -12,23 +12,16 @@
 <body>
 <?php
 $catalogMenu = [
-    ['id' => 0, 'text' => 'Новинка', 'color' => 'label--green'],
-    ['id' => 1, 'text' => 'Акция', 'color' => 'label--blue'],
-    ['id' => 2, 'text' => '-70%', 'color' => 'label--red'],
-    ['id' => 3, 'text' => 'топ продаж', 'color' => 'label--yellow'],
-];
-
-$catalogMenu = [
-    ['id' => 0, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'power_1', 'text' => 'Турбины', 'link' => 'turbines'],
-    ['id' => 1, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'cartridge', 'text' => 'Картриджи', 'link' => 'cartridges'],
-    ['id' => 2, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'geometry', 'text' => 'Геометрии', 'link' => 'geometries'],
-    ['id' => 3, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'aktuator', 'text' => 'Актуаторы', 'link' => 'actuators'],
-    ['id' => 4, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'servoprivod', 'text' => 'Сервоприводы', 'link' => 'servos'],
-    ['id' => 5, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'prokladki', 'text' => 'Прокладки', 'link' => 'gaskets'],
-    ['id' => 6, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'zap4asti', 'text' => 'Прочие запчасти', 'link' => 'turbina'],
-    ['id' => 7, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'aktuator_1', 'text' => 'Электронновакуумные актуаторы', 'link' => 'electronic-vacuum-vctuators'],
-    ['id' => 8, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'body-tourbine', 'text' => 'Корпуса турбины', 'link' => 'turbine-housings'],
-    ['id' => 9, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'zap4asti_1', 'text' => 'Запчасти для сервопривода', 'link' => 'servo-parts']
+    ['id' => 0, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'power_1', 'text' => 'Турбины', 'link' => '#'],
+    ['id' => 1, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'cartridge', 'text' => 'Картриджи', 'link' => '#'],
+    ['id' => 2, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'geometry', 'text' => 'Геометрии', 'link' => '#'],
+    ['id' => 3, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'aktuator', 'text' => 'Актуаторы', 'link' => '#'],
+    ['id' => 4, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'servoprivod', 'text' => 'Сервоприводы', 'link' => '#'],
+    ['id' => 5, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'prokladki', 'text' => 'Прокладки', 'link' => '#'],
+    ['id' => 6, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'zap4asti', 'text' => 'Прочие запчасти', 'link' => '#'],
+    ['id' => 7, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'aktuator_1', 'text' => 'Электронновакуумные актуаторы', 'link' => '#'],
+    ['id' => 8, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'body-tourbine', 'text' => 'Корпуса турбины', 'link' => '#'],
+    ['id' => 9, 'image' => 'images/turbina/turbine.jpg', 'icon' => 'zap4asti_1', 'text' => 'Запчасти для сервопривода', 'link' => '#']
 ];
 
 $basket = [
@@ -64,7 +57,7 @@ $basket = [
                                 </svg>
                             </button>
                         </div>
-                        <div class="dropdown-phones__menu visually-hidden shadow">
+                        <div class="dropdown-phones__menu visually-hidden">
                             <a href="tel:+380990000000">+380990000000</a>
                             <a href="tel:+380960000000">+380960000000</a>
                         </div>
@@ -91,13 +84,13 @@ $basket = [
             <div class="row header__bottom mx-0">
                 <div class="col-lg-4 col-xl-3 header-content pl-0">
                     <div class="header-content__header row mx-0">
-                        <button class="header-content__catalog button--scale" data-catalog-menu-button>
-                            <svg class="burger-icon icon button--scale" width="26" height="20">
+                        <button class="header-content__catalog" data-catalog-menu-button>
+                            <svg class="burger-icon icon" width="26" height="20">
                                 <use href="images/sprite.svg#icon-menu-catalog"></use>
                             </svg>
                             <a>каталог</a>
                         </button>
-                        <a href="/categories" class="header-content__categories">Все категории</a>
+                        <a href="#" class="header-content__categories">Все категории</a>
                     </div>
                     <div class="header-catalog visually-hidden"
                          data-catalog-menu>
@@ -118,8 +111,7 @@ $basket = [
                         @endforeach
                     </div>
                 </div>
-                <form action="#" class="col-9 col-lg-5 col-xl-7 header-form">
-                    @csrf
+                <form action="#" class="header-form col-8 col-lg-5 col-xl-7 ">
                     <input class="header-form__input" type="text" name="search"
                            placeholder="Поиск, например “турбина”">
                     <button class="header-form__button" type="button" aria-label="search">
@@ -233,17 +225,16 @@ $basket = [
                 <div class="menu-mobile__catalog">
                     <div class="menu-mobile__title">Каталог</div>
                     <div class="menu-mobile__turbine">
-                        <a href="/turbines" class="menu-mobile__item">Турбины</a>
-                        <a href="/cartridges" class="menu-mobile__item">Картриджи</a>
-                        <a href="/geometries" class="menu-mobile__item">Геометрии</a>
-                        <a href="/actuators" class="menu-mobile__item">Актуаторы</a>
-                        <a href="/servos" class="menu-mobile__item">Сервоприводы</a>
-                        <a href="/gaskets" class="menu-mobile__item">Прокладки</a>
-                        <a href="/spares" class="menu-mobile__item">Прочие запчасти</a>
-                        <a href="/electronic-vacuum-vctuators" class="menu-mobile__item">Электронновакуумные
-                            актуаторы</a>
-                        <a href="/turbine-housings" class="menu-mobile__item">Корпуса турбины</a>
-                        <a href="/servo-parts" class="menu-mobile__item">Запчасти для сервопривода</a>
+                        <a href="#" class="menu-mobile__item">Турбины</a>
+                        <a href="#" class="menu-mobile__item">Картриджи</a>
+                        <a href="#" class="menu-mobile__item">Геометрии</a>
+                        <a href="#" class="menu-mobile__item">Актуаторы</a>
+                        <a href="#" class="menu-mobile__item">Сервоприводы</a>
+                        <a href="#" class="menu-mobile__item">Прокладки</a>
+                        <a href="#" class="menu-mobile__item">Прочие запчасти</a>
+                        <a href="#" class="menu-mobile__item">Электронновакуумные актуаторы</a>
+                        <a href="#" class="menu-mobile__item">Корпуса турбины</a>
+                        <a href="#" class="menu-mobile__item">Запчасти для сервопривода</a>
                     </div>
                 </div>
                 <div class="menu-mobile__customers">
@@ -272,7 +263,7 @@ $basket = [
         не
         хотите соглашаться с использованием cookies, пожалуйста, посетите страницу <span class="cookies__info">"Про cookies"</span>
     </div>
-    <button class="button cookies__button  col-xxl-1 ">Согласен</button>
+    <button class="button button__cookies  col-xxl-1 ">Согласен</button>
 </div>
 <div>@yield('categories')
     <div class="backdrop is-hidden" data-basket-backdrop>

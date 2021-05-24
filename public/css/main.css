@@ -6016,6 +6016,24 @@ img {
   letter-spacing: 0;
 }
 
+.button__cookies {
+  padding: 20px 40px;
+  border-radius: 16px 0 16px 0;
+  align-self: center;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid #FFBE48;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 17.58px;
+  letter-spacing: 0;
+}
+.button__cookies:hover {
+  background: #fff;
+  color: #74C3B4;
+}
+
 .button--basket {
   display: flex;
   flex-direction: row;
@@ -6689,7 +6707,7 @@ img {
 .footer-top {
   padding: 58px 0 32px 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .footer-top {
     padding-top: 0;
   }
@@ -6844,7 +6862,6 @@ img {
   line-height: 14px;
 }
 .scroll-up__button {
-  width: 40px;
   height: 40px;
   margin-bottom: 10px;
   background-color: #DDE8F0;
@@ -6886,21 +6903,6 @@ img {
 }
 .cookies__info:hover {
   color: #E02020;
-}
-.cookies__button {
-  padding: 20px 40px;
-  border: 1px solid #FFBE48;
-  border-radius: 16px 0 16px 0;
-  background: none;
-  align-self: center;
-  text-align: center;
-  box-sizing: border-box;
-  border: 2px solid #FFBE48;
-  font-size: 15px;
-  color: #fff;
-  font-weight: 700;
-  line-height: 17.58px;
-  letter-spacing: 0;
 }
 
 .cookies--init {
@@ -7107,6 +7109,12 @@ img {
   line-height: 18px;
   letter-spacing: 1px;
 }
+.header-content__catalog:hover {
+  color: black;
+}
+.header-content__catalog:hover .icon {
+  stroke: black;
+}
 @media screen and (min-width: 1920px) {
   .header-content {
     font-size: 24px;
@@ -7132,6 +7140,9 @@ img {
   width: 100%;
   bottom: 0;
   border-bottom: 1px solid #fff;
+}
+.header-content__categories:hover {
+  color: black;
 }
 .header-content__categories:hover:before {
   border-bottom-color: black;
@@ -7182,7 +7193,7 @@ img {
 .wishing {
   display: none;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .wishing {
     display: inline-block;
   }
@@ -7266,19 +7277,6 @@ img {
   border-bottom: 1px solid #33485D;
 }
 
-/*
-.mobile-nav {
-    border-top: 1px solid #5C6D7D;
-    padding: 20px 0;
-
-    &__link {
-        padding: 10px 0;
-
-        font-family: $fonts-Roboto;
-        @include font(14px, $color-header-link-active, 700, 17px, 1px);
-    }
-}
-*/
 .dropdown-phones {
   display: flex;
   flex-direction: column;

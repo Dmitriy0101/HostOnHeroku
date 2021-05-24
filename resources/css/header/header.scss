@@ -162,6 +162,12 @@
         font-weight: 500;
         line-height: 18px;
         letter-spacing: 1px;
+        &:hover{
+            color: black;
+            .icon{
+                stroke: black;
+            }
+        }
     }
 
     @media screen and (min-width: 1920px) {
@@ -193,6 +199,7 @@
         }
 
         &:hover {
+            color: black;
             &:before {
                 border-bottom-color: black;
             }
@@ -248,7 +255,7 @@
 
 .wishing {
     display: none;
-    @media(min-width: 992px) {
+    @media screen and (min-width: 992px) {
         display: inline-block;
         &:hover {
             background-color: #47B39C;

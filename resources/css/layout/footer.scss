@@ -14,9 +14,10 @@
 
 .footer-top {
     padding: 58px 0 32px 0;
-    @media (max-width: 500px) {
+    @media (max-width: 800px) {
         padding-top: 0;
     }
+
 
     &__social {
         justify-content: space-between;

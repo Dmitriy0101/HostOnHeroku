@@ -128,6 +128,24 @@
     letter-spacing: 0;
 }
 
+.button__cookies {
+    padding: 20px 40px;
+    border-radius: 16px 0 16px 0;
+    align-self: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid #FFBE48;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 17.58px;
+    letter-spacing: 0;
+    &:hover{
+        background: #fff;
+        color: #74C3B4;
+    }
+}
+
 .button--basket {
     display: flex;
     flex-direction: row;
