@@ -62,7 +62,6 @@ $labels = [
                                 <picture class="category__picture">
                                     <source srcset="{{asset($category['image'])}}">
                                     <img loading="lazy" class="lozad" data-src="{{asset($category['image'])}}"
-                                         alt="{{$category['title']}}">
                                 </picture>
                                 <div class="category__title">{{ $category['title'] }}</div>
                             </div>
