@@ -1,0 +1,81 @@
+.shopping-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+
+    &__item {
+        position: relative;
+    }
+
+    &__icon {
+        display: inline-block;
+    }
+
+    &__block {
+        position: relative;
+    }
+
+    &__count {
+        position: absolute;
+        padding: 2px 10px;
+        top: -10px;
+        right: -12px;
+        background-color: #FFBE48;
+        border: 1px solid #FFBE48;
+        border-radius: 18px;
+        font-size: 14px;
+        color: #33485D;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 1px;
+
+
+        @media screen and (min-width: 992px) {
+            right: -6px;
+        }
+        @media screen and (min-width: 1200px) {
+            right: -16px;
+        }
+    }
+
+    &__telephone {
+    display: inline-block;
+    }
+
+    @media screen and (min-width: 992px) {
+        &:hover {
+            background-color: #47B39C;
+            border: 2px solid #47B39C;
+
+            .count {
+                background-color: #fff;
+                border: 1px solid #fff;
+            }
+
+            .icon {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.menu-button {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button .icon-menu {
+    display: none;
+}
+
+.menu-button.is-open .icon-menu {
+    display: block;
+}
+
+.menu-button.is-open .icon-exit {
+    display: none;
+}

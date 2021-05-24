@@ -1,0 +1,47 @@
+.dropdown-phones {
+    display: flex;
+    flex-direction: column;
+
+    .icon-path {
+        fill: #FFBE48;
+    }
+
+    &__header {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+
+    &__toggle.active {
+        .icon {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        z-index: 4;
+        transform: translate3d(0px, 34px, 0px);
+        background-color: #fff;
+    }
+
+    a {
+        display: inline-block;
+        padding: 12px;
+        font-size: 14px;
+        color: #33485D;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0;
+    }
+}
+.visually-hidden{
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     bottom: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+ }

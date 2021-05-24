@@ -1,0 +1,41 @@
+.trade {
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 9px;
+}
+
+.prices {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+
+    &__old {
+        position: relative;
+        color: #A7B0B5;
+        & + div {
+            font-size: 20px;
+            color: #E02020;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0;
+        }
+        &:before {
+            position: absolute;
+            left: 30%;
+            top: 50%;
+            width: 60%;
+            content: "";
+            transform: translate(-50%, -50%);
+            border-bottom: 2px solid #E02020;
+        }
+    }
+
+    &__new {
+        color: #333333;
+        font-size: 20px;
+        line-height: 120%;
+        font-family: 'Commissioner', sans-serif;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,82 @@
+.weapons {
+    padding-top: 13px;
+    padding-bottom: 70px;
+    overflow-x: hidden;
+}
+.weapon{
+    &:first-child{
+        padding-left: 0;
+    }
+}
+.weapon-card {
+    display: flex;
+    position: relative;
+    padding: 20px 20px 0;
+    border: 1px solid #F1F1F1;
+    border-radius: 3px;
+    width: 435px;
+    flex-direction: column;
+    height: 100%;
+    &__block{
+        height: 100%;
+    }
+
+    &__photo {
+        display: flex;
+    }
+
+    &__picture {
+        display: block;
+        margin-bottom: 12px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+
+    &__heading {
+        display: flex;
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    &:hover {
+        background-color: #FFFFFF;
+        box-shadow: 0 20px 80px rgba(0, 0, 0, 0.1);
+        border: 1px solid #F1F1F1;
+        box-sizing: border-box;
+
+        & .buy-button {
+            background-color: #52AA50;
+            color: #FFFFFF;
+            border-radius: 3px;
+        }
+
+        & .buy-button__icon {
+            margin-right: 10px;
+            fill: #ffffff;
+        }
+
+        & .buy-button__text {
+            opacity: 1;
+            order: 1;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-right: 33px;
+    }
+
+    @media screen and (max-width: 575px) {
+        width: 285px;
+    }
+    @media screen and (max-width: 380px) {
+        width: 250px;
+    }
+
+}
