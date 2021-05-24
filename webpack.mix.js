@@ -1,47 +1,34 @@
 const mix = require('laravel-mix');
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-
-/*mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);*/
 mix
-    /*Настройка js*/
-    .js('resources/assets/js/app.js', 'public/assets/js')
-    /*Настройка sass*/
-    .sass('resources/assets/sass/main.scss', 'public/assets/css')
+    .js('resources/js/app.js', 'public/js')
+    .sass('resources/css/main.scss', 'public/css')
+    .copy("resources/css/fonts.css", "public/css")
+    .copyDirectory("resources/fonts/", "public/fonts/", false)
 
-    // Настраиваем webpack для обработки изображений
     .webpackConfig({
         plugins: [
-            // Создаем svg-спрайт с иконками
             new SVGSpritemapPlugin(
-                'resources/assets/images/icons/*.svg', // Путь относительно каталога с webpack.mix.js
+                'resources/images/icons/*.svg',
                 {
                     output: {
-                        filename: 'assets/images/sprite.svg', // Путь относительно каталога public/
-                        svg4everybody: false, // Отключаем плагин "SVG for Everybody"
-                        chunk: {
-                            keep: true, // Включаем, чтобы при сборке не было ошибок из-за отсутствия spritemap.js
+                        filename: 'images/sprite.svg',
+                        svg: {
+                            sizes: false
                         },
                         svgo: {
                             plugins: [
                                 {
-                                    'removeStyleElement': false // Удаляем из svg теги <style>
-                                },
-                                {
-                                    'removeAttrs': {
-                                        attrs: ["fill", "stroke"] // Удаляем часть атрибутов для управления стилями из CSS
-                                    }
+                                    'removeStyleElement': false
                                 },
                             ]
                         },
                     },
                     sprite: {
-                        prefix: 'icon-', // Префикс для id иконок в спрайте, будет иметь вид 'icon-имя_файла_с_иконкой'
+                        prefix: 'icon-',
                         generate: {
-                            title: false, // Не добавляем в спрайт теги <title>
+                            title: false,
                         },
                     },
                 }
@@ -50,8 +37,8 @@ mix
             new CopyWebpackPlugin({
                 patterns: [
                     {
-                        from: 'resources/assets/images', // Путь относительно каталога с webpack.mix.js
-                        to: 'assets/images', // Путь относительно каталога public/,
+                        from: 'resources/images',
+                        to: 'images',
                         globOptions: {
                             ignore: ["**/icons/**"], // Игнорируем каталог с иконками
                         },

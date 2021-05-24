@@ -1,5 +1,21 @@
 {
-    "/assets/js/spritemap.js": "/assets/js/spritemap.js",
-    "/assets/js/app.js": "/assets/js/app.js",
-    "/assets/css/main.css": "/assets/css/main.css"
+    "/js/app.js": "/js/app.js",
+    "/css/main.css": "/css/main.css",
+    "/css/fonts.css": "/css/fonts.css",
+    "/fonts/Commissioner-Bold.woff": "/fonts/Commissioner-Bold.woff",
+    "/fonts/Commissioner-Bold.woff2": "/fonts/Commissioner-Bold.woff2",
+    "/fonts/Commissioner-Regular.woff": "/fonts/Commissioner-Regular.woff",
+    "/fonts/Commissioner-Regular.woff2": "/fonts/Commissioner-Regular.woff2",
+    "/fonts/Montserrat-Bold.woff": "/fonts/Montserrat-Bold.woff",
+    "/fonts/Montserrat-Bold.woff2": "/fonts/Montserrat-Bold.woff2",
+    "/fonts/Montserrat-Regular.woff": "/fonts/Montserrat-Regular.woff",
+    "/fonts/Montserrat-Regular.woff2": "/fonts/Montserrat-Regular.woff2",
+    "/fonts/Roboto-Bold.woff": "/fonts/Roboto-Bold.woff",
+    "/fonts/Roboto-Bold.woff2": "/fonts/Roboto-Bold.woff2",
+    "/fonts/Roboto-Light.woff": "/fonts/Roboto-Light.woff",
+    "/fonts/Roboto-Light.woff2": "/fonts/Roboto-Light.woff2",
+    "/fonts/Roboto-Medium.woff": "/fonts/Roboto-Medium.woff",
+    "/fonts/Roboto-Medium.woff2": "/fonts/Roboto-Medium.woff2",
+    "/fonts/Roboto-Regular.woff": "/fonts/Roboto-Regular.woff",
+    "/fonts/Roboto-Regular.woff2": "/fonts/Roboto-Regular.woff2"
 }

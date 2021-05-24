@@ -2,16 +2,16 @@
 
 <?php
 $arrayCategories = [
-    ['id' => 0, 'image' => 'assets/images/categories/image1.png', 'title' => 'Косметика и гигиена'],
-    ['id' => 1, 'image' => 'assets/images/categories/image2.png', 'title' => 'Техника и электроника'],
-    ['id' => 2, 'image' => 'assets/images/categories/image3.png', 'title' => 'Повседневная одежда'],
-    ['id' => 3, 'image' => 'assets/images/categories/image4.png', 'title' => 'Одежда и обувь'],
-    ['id' => 4, 'image' => 'assets/images/categories/image5.png', 'title' => 'Сапоги и туфли '],
-    ['id' => 5, 'image' => 'assets/images/categories/image6.png', 'title' => 'Универсальное'],
-    ['id' => 6, 'image' => 'assets/images/categories/image7.png', 'title' => 'Сумки и кошельки'],
-    ['id' => 7, 'image' => 'assets/images/categories/image8.png', 'title' => 'Нижнее бельё'],
-    ['id' => 8, 'image' => 'assets/images/categories/image9.png', 'title' => 'Спортивная обувь '],
-    ['id' => 9, 'image' => 'assets/images/categories/image10.png', 'title' => 'Сапоги и туфли ']
+    ['id' => 0, 'image' => 'images/categories/image1.png', 'title' => 'Косметика и гигиена'],
+    ['id' => 1, 'image' => 'images/categories/image2.png', 'title' => 'Техника и электроника'],
+    ['id' => 2, 'image' => 'images/categories/image3.png', 'title' => 'Повседневная одежда'],
+    ['id' => 3, 'image' => 'images/categories/image4.png', 'title' => 'Одежда и обувь'],
+    ['id' => 4, 'image' => 'images/categories/image5.png', 'title' => 'Сапоги и туфли '],
+    ['id' => 5, 'image' => 'images/categories/image6.png', 'title' => 'Универсальное'],
+    ['id' => 6, 'image' => 'images/categories/image7.png', 'title' => 'Сумки и кошельки'],
+    ['id' => 7, 'image' => 'images/categories/image8.png', 'title' => 'Нижнее бельё'],
+    ['id' => 8, 'image' => 'images/categories/image9.png', 'title' => 'Спортивная обувь '],
+    ['id' => 9, 'image' => 'images/categories/image10.png', 'title' => 'Сапоги и туфли ']
 ];
 $arrayCard = [
     ['id' => 0, 'time' => '— 15 min', 'text' => 'Текст карточки первый'],
@@ -19,6 +19,28 @@ $arrayCard = [
     ['id' => 2, 'time' => '— 11 min', 'text' => 'Текст карточки третий'],
     ['id' => 3, 'time' => '— 9 min', 'text' => 'Текст карточки последний']
 ];
+$arrayWeapons = [
+    ['id' => 0, 'label' => 'Новинка', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '10 отзывов', 'new-price' => '27 632.65₴', 'old-price' => '32 509₴', 'heading' => 'Ружье Mossberg 590M Mag-Fed', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 1, 'label' => 'Акция', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '2 отзыва', 'new-price' => '27 632.65₴', 'old-price' => '32 509₴', 'heading' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 2, 'label' => '-70%', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '12 отзывов', 'new-price' => '27 632.65₴', 'old-price' => '', 'heading' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 3, 'label' => 'топ продаж', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '46 отзывов', 'new-price' => '27 632.65₴', 'old-price' => '32 509₴', 'heading' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 4, 'label' => 'Новинка', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '10 отзывов', 'new-price' => '27 632.65₴', 'old-price' => '32 509₴', 'heading' => 'Ружье Mossberg 590M Mag-Fed', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 5, 'label' => 'Акция', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '2 отзыва', 'new-price' => '27 632.65₴', 'old-price' => '32 509₴', 'heading' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 6, 'label' => '-70%', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '12 отзывов', 'new-price' => '27 632.65₴', 'old-price' => '', 'heading' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 7, 'label' => 'топ продаж', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '46 отзывов', 'new-price' => '27 632.65₴', 'old-price' => '32 509₴', 'heading' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 4, 'label' => 'Новинка', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '10 отзывов', 'new-price' => '27 632.65₴', 'old-price' => '32 509₴', 'heading' => 'Ружье Mossberg 590M Mag-Fed', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 5, 'label' => 'Акция', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '2 отзыва', 'new-price' => '27 632.65₴', 'old-price' => '32 509₴', 'heading' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 6, 'label' => '-70%', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '12 отзывов', 'new-price' => '27 632.65₴', 'old-price' => '', 'heading' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+    ['id' => 7, 'label' => 'топ продаж', 'image' => 'images/weapon/Mossberg.jpg', 'reviews' => '46 отзывов', 'new-price' => '27 632.65₴', 'old-price' => '32 509₴', 'heading' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic', 'title' => 'Ружье Mossberg 590M Mag-Fed к.12 18.5" Synthetic'],
+];
+
+$labels = [
+    ['id' => 0, 'text' => 'Новинка', 'color' => 'label--green'],
+    ['id' => 1, 'text' => 'Акция', 'color' => 'label--blue'],
+    ['id' => 2, 'text' => '-70%', 'color' => 'label--red'],
+    ['id' => 3, 'text' => 'топ продаж', 'color' => 'label--yellow'],
+]
+
 ?>
 
 
@@ -63,7 +85,7 @@ $arrayCard = [
                             <span class="button__text">замовити зворотній
                             зв’язок</span>
                                 <svg class="seo__icon arrow" width="18" height="18">
-                                    <use href="/assets/images/sprite.svg#icon-arrow"></use>
+                                    <use href="images/sprite.svg#icon-arrow"></use>
                                 </svg>
                             </button>
                         </div>
@@ -77,8 +99,8 @@ $arrayCard = [
                             <div class="card">
                                 <div class="card__title">{{($card['text'])}}</div>
                                 <div class="card__time ">
-                                    <svg class="card__clock clock" width="18" height="18">
-                                        <use href="/assets/images/sprite.svg#icon-clock"></use>
+                                    <svg class="card__clock icon icon-clock" width="18" height="18">
+                                        <use xlink:href="images/sprite.svg#icon-clock"></use>
                                     </svg>
                                     <span>{{($card['time'])}}</span>
                                 </div>
@@ -90,320 +112,183 @@ $arrayCard = [
         </div>
     </div>
 
+
     <div class="catalog">
-        <div class="container container__big">
-            <div class="catalog-accessories row row-cols-1 row-cols-md-2 mx-0">
-                <div class="col first-col px-0">
+        <div class="container container__medium">
+            <div class="catalog-accessories row row row-cols-lg-2 row-cols-md-1 row-cols-1 mx-0">
+                <div class="col col-sm-12 px-0">
                     <div class="row row-cols-2 mx-0">
-                        <div class=" col-6 px-0">
-                            <div class="catalog__block">
-                                <a class="catalog__link col px-0">
-                                    <picture class="catalog__img">
-                                        <source srcset="/assets/images/weapon-catalog/cat1.jpg">
-                                        <img class="ctl" src="/assets/images/weapon-catalog/cat1.jpg" alt="">
-                                    </picture>
-                                </a>
+                        <div class="col col-md-6 col-12 px-0">
+                            <div class="catalog__block equipment">
+                                <div class="catalog__item">
+                                    <img class="catalog__img" loading="lazy" class="lozad"
+                                         data-src="images/weapon-catalog/cat1.jpg"
+                                         alt="">
+                                    <div class="button__square">
+                                        <button class="button__square--theme-white">
+                                            <span class="button__square--text-white">Снаряжение</span></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class=" col-6 px-0">
-                                <div class="catalog__block">
-                                    <a class="catalog__link col px-0">
-                                        <picture class="catalog__img">
-                                            <source srcset="/assets/images/weapon-catalog/cat2.jpg">
-                                            <img class="ctl" src="/assets/images/weapon-catalog/cat2.jpg" alt="">
-                                        </picture>
-                                    </a>
+                            <div class="col col-12 px-0">
+                                <div class="catalog__block knives">
+                                    <div class="catalog__item">
+                                        <img class="catalog__img"
+                                             loading="lazy" class="lozad" data-src="images/weapon-catalog/cat2.jpg"
+                                             alt="">
+                                        <div class="button__square">
+                                            <button class="button__square--theme-white">
+                                                <span class="button__square--text-white">Ножи и инструменты</span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <img src="/assets/images/weapon-catalog/cat3.jpg" alt="">
+                        <div class="col col-md-6 col-12 px-0">
+                            <div class="catalog__block shots">
+                                <div class="catalog__item catalog--theme-tall">
+                                    <img class="catalog__img"
+                                         loading="lazy" class="lozad" data-src="images/weapon-catalog/cat3.jpg"
+                                         alt="">
+                                    <div class="button__square">
+                                        <button class="button__square--theme-white">
+                                            <span class="button__square--text-white">Оружие</span></button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-6 col-img">
-                            <img src="/assets/images/weapon-catalog/cat4.jpg" alt="">
-                            <img src="/assets/images/weapon-catalog/cat6.jpg" alt="">
+                <div class="col col-sm-12 px-0">
+                    <div class="row row-cols-1 mx-0">
+                        <div class="col col-md-6 col-12 px-0">
+                            <div class="catalog__block cartridges">
+                                <div class="catalog__item">
+                                    <img class="catalog__img" loading="lazy" class="lozad"
+                                         data-src="images/weapon-catalog/cat4.jpg"
+                                         alt="">
+                                    <div class="button__square">
+                                        <button class="button__square--theme-white">
+                                            <span class="button__square--text-white">Патроны</span></button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <img src="/assets/images/weapon-catalog/cat5.jpg" alt="">
+                        <div class="col col-md-6 col-12 px-0">
+                            <div class="catalog__block accessories">
+                                <div class="catalog__item">
+                                    <img class="catalog__img"
+                                         loading="lazy" class="lozad" data-src="images/weapon-catalog/cat5.jpg"
+                                         alt="">
+                                    <div class="button__square">
+                                        <button class="button__square--theme-white">
+                                            <span class="button__square--text-white">Аксессуары</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-12 col-12 px-0">
+                            <div class="catalog__block range">
+                                <div class="catalog__item catalog--theme-wide">
+                                    <img class="catalog__img"
+                                         loading="lazy" class="lozad" data-src="images/weapon-catalog/cat6.jpg"
+                                         alt="">
+                                    <div class="button__square">
+                                        <button class="button__square--theme-white">
+                                            <span class="button__square--text-white">Тир</span></button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="card__weapon">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="weapon__block">
-                    <div class="weapon__lable weapon__lable-new">
-                        Новинка
-                    </div>
-                    <div class="weapon__container">
-                        <div class="weapon__link">
-                            <img class="weapon__img" src="/assets/images/weapon/Mossberg.png" alt="">
-                        </div>
-                        <div class="wish">
-                            <div class="weapon__item">
-                                <svg class="fav">
-                                    <use xlink:href="/assets/images/icons.svg#icon-fav"/>
-                                </svg>
-                            </div>
-                            <div class="weapon__item">
-                                <svg class="libra">
-                                    <use xlink:href="/assets/images/icons.svg#icon-libra"/>
-                                </svg>
-                            </div>
-                            <div class="weapon__item">
-                                <svg class="play-button">
-                                    <use xlink:href="/assets/images/icons.svg#icon-play-button"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="present">
-                            <img src="/assets/images/present.svg" alt="">
-                        </div>
-                        <div class="weapon__info">
-                            <span class="weapon__name">Ружье Mossberg 590M Mag-Fed</span>
-                            <div class="weapon__rating">
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-rait">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <span class="weapon__review">10 отзывов</span>
-                            </div>
-                        </div>
-                        <div class="weapon-price">
-                            <div class="weapon-price__old">
-                                32 509<span class="currency-old">&#8372</span>
-                            </div>
-                            <div class="weapon-price__new">
-                                <div class="weapon-price__small">
-                                    27 632.65<span class="currency-new">&#8372</span>
+    <div class="weapons container container__big">
+        <div id="weapons-content" class="weapons__content">
+            @foreach($arrayWeapons as $weapon)
+                <div class="col weapon">
+                    <div class="weapon-card">
+                        <div class="weapon-card__block">
+                            <div class="weapon-card__content">
+                                <a href="#" class="weapon-card__photo">
+                                    <picture class="weapon-card__picture">
+                                        <source srcset="{{asset($weapon['image'])}}">
+                                        <img loading="lazy" class="lozad" data-src="{{asset($weapon['image'])}}"
+                                             alt="#">
+                                    </picture>
+                                </a>
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <a href="#" class="activity__gift">
+                                        <svg class="gift__icon" width="20" height="20">
+                                            <use href='images/sprite.svg#icon-gift-box'></use>
+                                        </svg>
+                                    </a>
+                                    <a class="weapon-card__heading">
+                                        {{$weapon['heading']}}
+                                    </a>
+                                    <div class="weapon-card__rating rating">
+                                        <svg class="rating__icon" width="61" height="16">
+                                            <use href='images/sprite.svg#icon-stars'></use>
+                                        </svg>
+                                        <a href="#"
+                                           class="rating__reviews reviews">{{$weapon['reviews']}}</a>
+                                    </div>
+                                    <div class="weapon-card__trade trade row mx-0 h-100">
+                                        <div class="trade__prices prices">
+                                            @if ($weapon['old-price'] !== '')
+                                                <div
+                                                    class="prices__old">{{$weapon['old-price']}}</div>
+                                            @endif
+                                            <div class="prices__new">{{$weapon['new-price']}}</div>
+                                        </div>
+                                        <button
+                                            class="weapon-card__buttons buy-button row button--scale">
+                                            <div class="buy-button__text">Купить</div>
+                                            <svg class="buy-button__icon" width="20" height="22">
+                                                <use href='images/sprite.svg#icon-basket'></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="weapon-card__activity activity">
+                                        @foreach ($labels as $label)
+                                            @if ($weapon['label'] === $label['text'])
+                                                <div
+                                                    class="lable activity__label {{$label['color']}} ">
+                                                    {{$label['text']}}
+                                                </div>
+                                                @break
+                                            @endif
+                                        @endforeach
+                                        <div
+                                            class="activity__actions actions ">
+                                            <button class="actions__button button--scale">
+                                                <svg class="actions__icon mb-3" width="20" height="20">
+                                                    <use href='images/sprite.svg#icon-wish'></use>
+                                                </svg>
+                                            </button>
+                                            <button class="actions__button button--scale">
+                                                <svg class="actions__icon icon mb-3" width="20" height="20">
+                                                    <use href='images/sprite.svg#icon-compare'></use>
+                                                </svg>
+                                            </button>
+                                            <button class="actions__button button--scale">
+                                                <svg class="actions__icon icon" width="20" height="20">
+                                                    <use href='images/sprite.svg#icon-play'></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <svg class="icon-basket">
-                                    <use xlink:href="/assets/images/icons.svg#icon-basket"/>
-                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="weapon__block">
-                    <div class="weapon__lable weapon__lable-action">
-                        Акции
-                    </div>
-                    <div class="weapon__container">
-                        <div class="weapon__link">
-                            <img class="weapon__img" src="/assets/images/weapon/Mossberg.png" alt="">
-                        </div>
-                        <div class="wish">
-                            <div class="weapon__item">
-                                <svg class="fav">
-                                    <use xlink:href="/assets/images/icons.svg#icon-fav"/>
-                                </svg>
-                            </div>
-                            <div class="weapon__item">
-                                <svg class="libra">
-                                    <use xlink:href="/assets/images/icons.svg#icon-libra"/>
-                                </svg>
-                            </div>
-                            <div class="weapon__item">
-                                <svg class="play-button">
-                                    <use xlink:href="/assets/images/icons.svg#icon-play-button"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="present">
-                            <img src="/assets/images/present.svg" alt="">
-                        </div>
-                        <div class="weapon__info">
-                            <span class="weapon__name">Ружье Mossberg 590M Mag-Fed</span>
-                            <div class="weapon__rating">
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-rait">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <span class="weapon__review">2 отзывов</span>
-                            </div>
-                        </div>
-                        <div class="weapon-price">
-                            <div class="weapon-price__old">
-                                32 509<span class="currency-old">&#8372</span>
-                            </div>
-                            <div class="weapon-price__new">
-                                <div class="weapon-price__small">
-                                    27 632.65<span class="currency-new">&#8372</span>
-                                </div>
-                                <svg class="icon-basket">
-                                    <use xlink:href="/assets/images/icons.svg#icon-basket"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="weapon__block">
-                    <div class="weapon__lable weapon__lable-sale">
-                        -70%
-                    </div>
-                    <div class="weapon__container">
-                        <div class="weapon__link">
-                            <img class="weapon__img" src="/assets/images/weapon/Mossberg.png" alt="">
-                        </div>
-                        <div class="wish">
-                            <div class="weapon__item">
-                                <svg class="fav">
-                                    <use xlink:href="/assets/images/icons.svg#icon-fav"/>
-                                </svg>
-                            </div>
-                            <div class="weapon__item">
-                                <svg class="libra">
-                                    <use xlink:href="/assets/images/icons.svg#icon-libra"/>
-                                </svg>
-                            </div>
-                            <div class="weapon__item">
-                                <svg class="play-button">
-                                    <use xlink:href="/assets/images/icons.svg#icon-play-button"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="present">
-                            <img src="/assets/images/present.svg" alt="">
-                        </div>
-                        <div class="weapon__info">
-                            <span class="weapon__name">Ружье Mossberg 590M Mag-Fed</span>
-                            <div class="weapon__rating">
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-rait">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <span class="weapon__review">12 отзывов</span>
-                            </div>
-                        </div>
-                        <div class="weapon-price">
-                            <div class="weapon-price__old">
-                                32 509<span class="currency-old">&#8372</span>
-                            </div>
-                            <div class="weapon-price__new">
-                                <div class="weapon-price__small">
-                                    27 632.65<span class="currency-new">&#8372</span>
-                                </div>
-                                <svg class="icon-basket">
-                                    <use xlink:href="/assets/images/icons.svg#icon-basket"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="weapon__block">
-                    <div class="weapon__lable weapon__lable-top">
-                        топ продаж
-                    </div>
-                    <div class="weapon__container">
-                        <div class="weapon__link">
-                            <img class="weapon__img" src="/assets/images/weapon/Mossberg.png" alt="">
-                        </div>
-                        <div class="wish">
-                            <div class="weapon__item">
-                                <svg class="fav">
-                                    <use xlink:href="/assets/images/icons.svg#icon-fav"/>
-                                </svg>
-                            </div>
-                            <div class="weapon__item">
-                                <svg class="libra">
-                                    <use xlink:href="/assets/images/icons.svg#icon-libra"/>
-                                </svg>
-                            </div>
-                            <div class="weapon__item">
-                                <svg class="play-button">
-                                    <use xlink:href="/assets/images/icons.svg#icon-play-button"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="present">
-                            <img src="/assets/images/present.svg" alt="">
-                        </div>
-                        <div class="weapon__info">
-                            <span class="weapon__name">Ружье Mossberg 590M Mag-Fed</span>
-                            <div class="weapon__rating">
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-raiting">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <svg class="icon-rait">
-                                    <use xlink:href="/assets/images/icons.svg#icon-raiting"/>
-                                </svg>
-                                <span class="weapon__review">46 отзывов</span>
-                            </div>
-                        </div>
-                        <div class="weapon-price">
-                            <div class="weapon-price__old">
-                                32 509<span class="currency-old">&#8372</span>
-                            </div>
-                            <div class="weapon-price__new">
-                                <div class="weapon-price__small">
-                                    27 632.65<span class="currency-new">&#8372</span>
-                                </div>
-                                <svg class="icon-basket">
-                                    <use xlink:href="/assets/images/icons.svg#icon-basket"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            @endforeach
         </div>
     </div>
 @endsection

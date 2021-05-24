@@ -1,0 +1,54 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+}
+button, input {
+    border: none;
+    outline: none;
+    background: none;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.container__big {
+    max-width: 2560px;
+    @media (max-width: 1550px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 400px) {
+        padding: 0 10px;
+    }
+}
+.container__medium{
+    max-width: 1920px;
+    padding: 0 22px;
+}
+.container__small {
+    max-width: 1608px;
+    @media screen and (min-width: 2500px){
+        max-width: 2350px;
+    }
+    @media (max-width: 1550px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 500px) {
+        padding: 0 10px;
+    }
+}
+
