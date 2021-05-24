@@ -61,7 +61,7 @@ $labels = [
                             <div class="category__item category col">
                                 <picture class="category__picture">
                                     <source srcset="{{asset($category['image'])}}">
-                                    <img loading="lazy" class="lozad" data-src="{{asset($category['image'])}}"
+                                    <img loading="lazy" class="lozad" data-src="{{asset($category['image'])}}"alt="">
                                 </picture>
                                 <div class="category__title">{{ $category['title'] }}</div>
                             </div>
@@ -218,7 +218,7 @@ $labels = [
                                 <a href="#" class="weapon-card__photo">
                                     <picture class="weapon-card__picture">
                                         <source srcset="{{asset($weapon['image'])}}">
-                                        <img loading="lazy" class="lozad" data-src="{{asset($weapon['image'])}}">
+                                        <img loading="lazy" class="lozad" data-src="{{asset($weapon['image'])}}" alt="">
                                     </picture>
                                 </a>
                                 <div class="d-flex flex-column justify-content-between h-100">
