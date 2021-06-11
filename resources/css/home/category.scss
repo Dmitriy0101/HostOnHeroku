@@ -1,19 +1,14 @@
 .category {
-    padding: 0 0;
     &__picture {
         display: block;
         position: relative;
         margin-bottom: 18px;
 
-        img {
-            border-radius: 44px 44px 44px 0;
-        }
-
         &::after {
             position: absolute;
             content: "";
             left: 0;
-            bottom: -2.4%;
+            bottom: -3.4%;
             height: 30px;
             width: 30px;
             border-radius: 50%;

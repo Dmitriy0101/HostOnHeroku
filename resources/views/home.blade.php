@@ -46,24 +46,29 @@ $labels = [
 
 @section('categories')
     <div class="categories">
-        <div class="container container__big">
+        <div class="container container--big">
             <div class="categories-block">
-                <div class="container container__small">
-                    <div class="categories-block__header row row-cols-1 row-cols-sm-2 mx-0">
-                        <div class="col-md-6 col-8 px-0">
-                            <div class="title">Популярные категории</div>
+                <div class="container container--small">
+                    <div class="categories-block__header">
+                        <div class="row row-cols-1 row-cols-sm-2 mx-0 align-items-center">
+                            <div class="col-md-6 col-8 col-xl-6 px-0">
+                                <div class="title">Популярные категории</div>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-3 col-xl-2 ml-auto">
+                                <a href="#" class="button button__text">все категории </a>
+                            </div>
                         </div>
-                        <a class="button button__text col-4 col-sm-4 col-md-3 col-xl-2 ml-auto"
-                           href="#">все категории </a>
                     </div>
-                    <div class="slider row mx-0">
+                    <div class="slider">
                         @foreach($arrayCategories as $category)
-                            <div class="category__item category col">
-                                <picture class="category__picture">
-                                    <source srcset="{{asset($category['image'])}}">
-                                    <img loading="lazy" class="lozad" data-src="{{asset($category['image'])}}"alt="">
-                                </picture>
-                                <div class="category__title">{{ $category['title'] }}</div>
+                            <div class="col px-0">
+                                <div class="category">
+                                    <picture class="category__picture">
+                                        <source srcset="{{asset($category['image'])}}">
+                                        <img class="lozad" data-src="{{asset($category['image'])}}" alt="">
+                                    </picture>
+                                    <div class="category__title">{{ $category['title'] }}</div>
+                                </div>
                             </div>
                         @endforeach
                     </div>
@@ -73,40 +78,46 @@ $labels = [
     </div>
 
     <div class="common">
-        <div class="common__block container container__small">
-            <div class="seo col-10 col-xxl-3 px-0">
-                <div class="row">
-                    <div class="seo__block">
-                        <div class="seo__title">Тут должен быть какой то текст, потом <br>
-                            придумаем какой точно будет =)
-                        </div>
-                        <div class="seo__btn">
-                            <button class="button button--theme-flat">
+        <div class="common__block">
+            <div class="container container--small">
+                <div class="seo">
+                    <div class="col-10 col-xxl-3 px-0">
+                        <div class="row">
+                            <div class="seo__block">
+                                <div class="seo__title">Тут должен быть какой то текст, потом <br>
+                                    придумаем какой точно будет =)
+                                </div>
+                                <div class="seo__btn">
+                                    <button class="button button--theme-flat">
                             <span class="button__text">замовити зворотній
                             зв’язок</span>
-                                <svg class="seo__icon arrow" width="18" height="18">
-                                    <use href="images/sprite.svg#icon-arrow"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container container__small">
-                <div class="products row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-                    @foreach($arrayCard as $card)
-                        <div class="col mb-4">
-                            <div class="card">
-                                <div class="card__title">{{($card['text'])}}</div>
-                                <div class="card__time ">
-                                    <svg class="card__clock icon icon-clock" width="18" height="18">
-                                        <use xlink:href="images/sprite.svg#icon-clock"></use>
-                                    </svg>
-                                    <span>{{($card['time'])}}</span>
+                                        <svg class="button__icon" width="18" height="18">
+                                            <use href="images/sprite.svg#icon-arrow"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                    @endforeach
+                    </div>
+                </div>
+                <div class="container container--small">
+                    <div class="products">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+                            @foreach($arrayCard as $card)
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <div class="card__title">{{($card['text'])}}</div>
+                                        <div class="card__time ">
+                                            <svg class="card__clock" width="18" height="18">
+                                                <use xlink:href="images/sprite.svg#icon-clock"></use>
+                                            </svg>
+                                            <span>{{($card['time'])}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,19 +125,20 @@ $labels = [
 
 
     <div class="catalog">
-        <div class="container container__medium">
-            <div class="catalog-accessories row row row-cols-lg-2 row-cols-md-1 row-cols-1 mx-0">
+        <div class="container container--medium">
+            <div class="row row-cols-lg-2 row-cols-md-1 row-cols-1 mx-0">
                 <div class="col col-sm-12 px-0">
                     <div class="row row-cols-2 mx-0">
                         <div class="col col-md-6 col-12 px-0">
                             <div class="catalog__block equipment">
                                 <div class="catalog__item">
-                                    <img class="catalog__img" loading="lazy" class="lozad"
+                                    <img class="catalog__img" loading="lazy"
                                          data-src="images/weapon-catalog/cat1.jpg"
                                          alt="">
                                     <div class="button__square">
-                                        <button class="button__square--theme-white">
-                                            <span class="button__square--text-white">Снаряжение</span></button>
+                                        <button class="button button--theme-white">
+                                            <span class="button__text--white">Снаряжение</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -134,11 +146,11 @@ $labels = [
                                 <div class="catalog__block knives">
                                     <div class="catalog__item">
                                         <img class="catalog__img"
-                                             loading="lazy" class="lozad" data-src="images/weapon-catalog/cat2.jpg"
+                                             loading="lazy" data-src="images/weapon-catalog/cat2.jpg"
                                              alt="">
                                         <div class="button__square">
-                                            <button class="button__square--theme-white">
-                                                <span class="button__square--text-white">Ножи и инструменты</span>
+                                            <button class="button button--theme-white">
+                                                <span class="button__text--white">Ножи и инструменты</span>
                                             </button>
                                         </div>
                                     </div>
@@ -149,11 +161,12 @@ $labels = [
                             <div class="catalog__block shots">
                                 <div class="catalog__item catalog--theme-tall">
                                     <img class="catalog__img"
-                                         loading="lazy" class="lozad" data-src="images/weapon-catalog/cat3.jpg"
+                                         loading="lazy" data-src="images/weapon-catalog/cat3.jpg"
                                          alt="">
                                     <div class="button__square">
-                                        <button class="button__square--theme-white">
-                                            <span class="button__square--text-white">Оружие</span></button>
+                                        <button class="button button--theme-white">
+                                            <span class="button__text--white">Оружие</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -166,12 +179,13 @@ $labels = [
                         <div class="col col-md-6 col-12 px-0">
                             <div class="catalog__block cartridges">
                                 <div class="catalog__item">
-                                    <img class="catalog__img" loading="lazy" class="lozad"
+                                    <img class="catalog__img" loading="lazy"
                                          data-src="images/weapon-catalog/cat4.jpg"
                                          alt="">
                                     <div class="button__square">
-                                        <button class="button__square--theme-white">
-                                            <span class="button__square--text-white">Патроны</span></button>
+                                        <button class="button button--theme-white">
+                                            <span class="button__text--white">Патроны</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -183,8 +197,9 @@ $labels = [
                                          loading="lazy" class="lozad" data-src="images/weapon-catalog/cat5.jpg"
                                          alt="">
                                     <div class="button__square">
-                                        <button class="button__square--theme-white">
-                                            <span class="button__square--text-white">Аксессуары</span></button>
+                                        <button class="button button--theme-white">
+                                            <span class="button__text--white">Аксессуары</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -196,8 +211,9 @@ $labels = [
                                          loading="lazy" class="lozad" data-src="images/weapon-catalog/cat6.jpg"
                                          alt="">
                                     <div class="button__square">
-                                        <button class="button__square--theme-white">
-                                            <span class="button__square--text-white">Тир</span></button>
+                                        <button class="button button--theme-white">
+                                            <span class="button__text--white">Тир</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -208,86 +224,87 @@ $labels = [
         </div>
     </div>
 
-    <div class="weapons container container__big">
-        <div id="weapons-content" class="weapons__content">
-            @foreach($arrayWeapons as $weapon)
-                <div class="col weapon">
-                    <div class="weapon-card">
-                        <div class="weapon-card__block">
-                            <div class="weapon-card__content">
-                                <a href="#" class="weapon-card__photo">
-                                    <picture class="weapon-card__picture">
-                                        <source srcset="{{asset($weapon['image'])}}">
-                                        <img loading="lazy" class="lozad" data-src="{{asset($weapon['image'])}}" alt="">
-                                    </picture>
-                                </a>
-                                <div class="d-flex flex-column justify-content-between h-100">
-                                    <a href="#" class="activity__gift">
-                                        <svg class="gift__icon" width="20" height="20">
-                                            <use href='images/sprite.svg#icon-gift-box'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="weapon-card__heading">
-                                        {{$weapon['heading']}}
-                                    </a>
-                                    <div class="weapon-card__rating rating">
-                                        <svg class="rating__icon" width="61" height="16">
-                                            <use href='images/sprite.svg#icon-stars'></use>
-                                        </svg>
-                                        <a href="#"
-                                           class="rating__reviews reviews">{{$weapon['reviews']}}</a>
-                                    </div>
-                                    <div class="weapon-card__trade trade row mx-0 h-100">
-                                        <div class="trade__prices prices">
-                                            @if ($weapon['old-price'] !== '')
-                                                <div
-                                                    class="prices__old">{{$weapon['old-price']}}</div>
-                                            @endif
-                                            <div class="prices__new">{{$weapon['new-price']}}</div>
-                                        </div>
-                                        <button
-                                            class="weapon-card__buttons buy-button row button--scale">
-                                            <div class="buy-button__text">Купить</div>
-                                            <svg class="buy-button__icon" width="20" height="22">
-                                                <use href='images/sprite.svg#icon-basket'></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                    <div class="weapon-card__activity activity">
-                                        @foreach ($labels as $label)
-                                            @if ($weapon['label'] === $label['text'])
-                                                <div
-                                                    class="lable activity__label {{$label['color']}} ">
-                                                    {{$label['text']}}
+    <div class="weapons">
+        <div class="container container--big">
+            <div id="weapons-content" class="weapons__content">
+                @foreach($arrayWeapons as $weapon)
+                    <div class="col">
+                        <div class="weapon">
+                            <div class="weapon-card">
+                                <div class="weapon-card__block">
+                                    <div class="weapon-card__content">
+                                        <a href="#" class="weapon-card__photo">
+                                            <picture class="weapon-card__picture">
+                                                <source srcset="{{asset($weapon['image'])}}">
+                                                <img loading="lazy" data-src="{{asset($weapon['image'])}}"
+                                                     alt="">
+                                            </picture>
+                                        </a>
+                                        <div class="weapon-card__body">
+                                            <a href="#" class="activity__gift">
+                                                <svg class="gift__icon" width="20" height="20">
+                                                    <use href='images/sprite.svg#icon-gift-box'></use>
+                                                </svg>
+                                            </a>
+                                            <a class="weapon-card__heading">
+                                                {{$weapon['heading']}}
+                                            </a>
+                                            <div class="rating">
+                                                <svg class="rating__icon" width="61" height="16">
+                                                    <use href='images/sprite.svg#icon-stars'></use>
+                                                </svg>
+                                                <a href="#"
+                                                   class="rating__reviews">{{$weapon['reviews']}}</a>
+                                            </div>
+                                            <div class="trade row mx-0 h-100">
+                                                <div class="trade-prices">
+                                                    @if ($weapon['old-price'] !== '')
+                                                        <div class="trade-prices__old">{{$weapon['old-price']}}</div>
+                                                    @endif
+                                                    <div class="trade-prices__new">{{$weapon['new-price']}}</div>
                                                 </div>
-                                                @break
-                                            @endif
-                                        @endforeach
-                                        <div
-                                            class="activity__actions actions ">
-                                            <button class="actions__button button--scale">
-                                                <svg class="actions__icon mb-3" width="20" height="20">
-                                                    <use href='images/sprite.svg#icon-wish'></use>
-                                                </svg>
-                                            </button>
-                                            <button class="actions__button button--scale">
-                                                <svg class="actions__icon icon mb-3" width="20" height="20">
-                                                    <use href='images/sprite.svg#icon-compare'></use>
-                                                </svg>
-                                            </button>
-                                            <button class="actions__button button--scale">
-                                                <svg class="actions__icon icon" width="20" height="20">
-                                                    <use href='images/sprite.svg#icon-play'></use>
-                                                </svg>
-                                            </button>
+                                                <button class="button button--shop row">
+                                                    <div class="button--shop__text">Купить</div>
+                                                    <svg class="button--shop__icon" width="20" height="22">
+                                                        <use href='images/sprite.svg#icon-basket'></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="weapon-card__activity activity">
+                                                @foreach ($labels as $label)
+                                                    @if ($weapon['label'] === $label['text'])
+                                                        <div class="lable activity__label {{$label['color']}} ">
+                                                            {{$label['text']}}
+                                                        </div>
+                                                        @break
+                                                    @endif
+                                                @endforeach
+                                                <div class="actions">
+                                                    <button class="actions__button button--scale">
+                                                        <svg class="actions__icon mb-3" width="20" height="20">
+                                                            <use href='images/sprite.svg#icon-wish'></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="actions__button button--scale">
+                                                        <svg class="actions__icon mb-3" width="20" height="20">
+                                                            <use href='images/sprite.svg#icon-compare'></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="actions__button button--scale">
+                                                        <svg class="actions__icon" width="20" height="20">
+                                                            <use href='images/sprite.svg#icon-play'></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
     </div>
 @endsection

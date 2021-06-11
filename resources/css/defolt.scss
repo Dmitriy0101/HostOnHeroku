@@ -26,7 +26,7 @@ img{
     padding: 0 40px;
 }
 
-.container__big {
+.container--big {
     max-width: 2560px;
     @media (max-width: 1550px) {
         padding: 0 20px;
@@ -35,11 +35,11 @@ img{
         padding: 0 10px;
     }
 }
-.container__medium{
+.container--medium{
     max-width: 1920px;
     padding: 0 22px;
 }
-.container__small {
+.container--small {
     max-width: 1608px;
     @media screen and (min-width: 2500px){
         max-width: 2350px;

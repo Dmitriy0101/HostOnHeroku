@@ -28,13 +28,14 @@
     @media (max-width: 500px) {
         padding: 5px 0;
     }
-    @media screen and (min-width: 1000px) {
-        &:hover,
-        &:focus,
-        &:active {
+    @media (min-width: 1000px) {
+        &:hover{
             cursor: pointer;
             transform: scale(1.1);
         }
+    }
+    &__icon{
+        padding-left: 5px;
     }
 }
 
@@ -43,7 +44,7 @@
     align-items: center;
     border: none;
     z-index: 10;
-    padding: 21px 30px 21px 46px;
+    padding: 21px 14px 21px 15px;
     background: linear-gradient(0deg, #FF485A, #FF485A);
 
     @media(max-width: 1500px) {
@@ -62,7 +63,7 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-.button__square--theme-white{
+.button--theme-white{
     padding: 12px 17px;
     top: 46%;
     left: 31%;
@@ -73,9 +74,7 @@
     @media screen and (min-width: 1200px) {
         padding: 14px 30px;
 
-        &:hover,
-        &:focus,
-        &:active {
+        &:hover {
             cursor: pointer;
             transform: scale(1.1);
         }
@@ -84,7 +83,7 @@
         padding: 10px 10px;
     }
 }
-.button__square--text-white{
+.button__text--white{
     font-weight: bold;
     font-size: 16px;
     line-height: 125%;
@@ -106,7 +105,8 @@
         }
     }
 }
-.buy-button {
+.button--shop {
+    border-radius: 0;
     align-items: center;
     padding: 12px 15px;
     background: none;
@@ -126,9 +126,10 @@
     font-weight: 700;
     line-height: 17.58px;
     letter-spacing: 0;
+    padding: 0 6px 0 6px;
 }
 
-.button__cookies {
+.button-theme--cookies {
     padding: 20px 40px;
     border-radius: 16px 0 16px 0;
     align-self: center;

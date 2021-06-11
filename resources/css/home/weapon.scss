@@ -4,6 +4,7 @@
     overflow-x: hidden;
 }
 .weapon{
+    height: 100%;
     &:first-child{
         padding-left: 0;
     }
@@ -34,7 +35,12 @@
             object-fit: fill;
         }
     }
-
+    &__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
     &__heading {
         display: flex;
         color: #000;
@@ -51,18 +57,19 @@
         border: 1px solid #F1F1F1;
         box-sizing: border-box;
 
-        & .buy-button {
+        & .button--shop {
             background-color: #52AA50;
             color: #FFFFFF;
             border-radius: 3px;
+            transform: scale(1.1);
         }
 
-        & .buy-button__icon {
+        & .button--shop__icon {
             margin-right: 10px;
             fill: #ffffff;
         }
 
-        & .buy-button__text {
+        & .button--shop__text {
             opacity: 1;
             order: 1;
         }

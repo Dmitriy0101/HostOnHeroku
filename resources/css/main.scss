@@ -4,7 +4,7 @@
 
 @import "defolt";
 
-
+@import "components/logotip";
 @import "components/title";
 @import "components/button";
 @import "components/lable";
@@ -22,9 +22,9 @@
 @import "home/catalog";
 
 @import "home/weapon";
-@import "home/weapon__activity";
-@import "home/weapon__rating";
-@import "home/weapon__trade";
+@import "home/activity";
+@import "home/rating";
+@import "home/trade";
 @import "home/map";
 @import "home/scrolbar";
 

@@ -64,6 +64,7 @@
         }
 
         &:hover {
+            cursor: pointer;
             &:before {
                 border-bottom-color: red;
             }

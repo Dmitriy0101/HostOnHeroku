@@ -1,8 +1,8 @@
 .catalog {
-    padding-top: 33px;
+    padding-top: 15px;
 
     &__block {
-        padding: 0 18px 18px 18px;
+        padding: 18px 18px 18px 18px;
         position: relative;
     }
 
@@ -69,22 +69,17 @@
     }
 }
 
-.equipment {
-
-}
-
 .knives {
-    padding-top: 18px;
     padding-bottom: 0;
     @media(max-width: 600px) {
-        padding-bottom: 36px;
+        padding-bottom: 18px;
     }
 }
 
 .shots {
     padding-bottom: 0;
     @media(max-width: 1000px) {
-        padding-bottom: 36px;
+        padding-bottom: 18px;
     }
 }
 

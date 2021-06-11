@@ -29,11 +29,10 @@
         transition: 0.4s;
         background: #FF485A;
         color: #fff;
-        box-shadow: 0 0 10px #FF485A; /* Параметры тени */
+        box-shadow: 0 0 10px #FF485A;
 
-        .icon {
-            stroke: #fff;
-            fill: none;
+        .card__clock {
+           stroke: #FFFFFF;
         }
 
     }
